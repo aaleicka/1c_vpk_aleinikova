@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<querylist>
+	<query name="ОказаниеУслуг">
+		<text>ВЫБРАТЬ
+    СписокУслуг.Услуга КАК Услуга,
+    СписокУслуг.Услуга.Родитель КАК ВидНоменклатуры,
+    СписокУслуг.Количество КАК Количество,
+    СписокУслуг.Цена КАК Цена,
+    СписокУслуг.Сумма КАК Сумма
+ИЗ
+    Документ.ОказаниеУслуг.СписокУслуг КАК СписокУслуг
+ГДЕ
+    СписокУслуг.Ссылка = &amp;Ссылка
+</text>
+		<textSQL>
+
+		</textSQL>
+		<planSQL>
+
+		</planSQL>
+		<typeSQL>
+
+		</typeSQL>
+		<parameters>
+			<parameter name="Ссылка" type="DocumentRef.ОказаниеУслуг" value="a4f3d6d8-4e0f-11f1-9f4b-efb1b1cae1ac"/>
+		</parameters>
+	</query>
+</querylist>
