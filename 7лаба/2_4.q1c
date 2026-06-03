@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<querylist>
+	<query name="Номенклатура">
+		<text>ВЫБРАТЬ
+    ЦеныНоменклатурыСрезПоследних.Период,
+    ЦеныНоменклатурыСрезПоследних.Номенклатура,
+    ЦеныНоменклатурыСрезПоследних.Цена
+ИЗ
+    РегистрСведений.ЦеныНоменклатуры.СрезПоследних(&amp;Дата,Номенклатура = &amp;Номенклатура) КАК ЦеныНоменклатурыСрезПоследних
+</text>
+		<textSQL>
+
+		</textSQL>
+		<planSQL>
+
+		</planSQL>
+		<typeSQL>
+
+		</typeSQL>
+		<parameters>
+			<parameter name="ВидНоменклатуры" type="EnumRef.ВидыНоменклатуры" value="Материал"/>
+			<parameter name="Ссылка" type="DocumentRef.ОказаниеУслуг" value="fbb968c7-5e06-11f1-9f63-adaa40e779db"/>
+			<parameter name="Дата" type="Дата" value="2026-04-08T00:00:00"/>
+			<parameter name="Номенклатура" type="CatalogRef.Номенклатура" value="141e28d5-5dfd-11f1-9f63-adaa40e779db"/>
+		</parameters>
+	</query>
+</querylist>
